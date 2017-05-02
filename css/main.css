@@ -1,0 +1,376 @@
+/*Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+*, *::before, *::after {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ } 
+
+html {
+     height: 100%;
+     font-size: 16px;
+ }
+ 
+ body {
+     font-family: 'Poppins', sans-serif;
+     min-height: 100%;
+ }
+ 
+ body.landing {
+     /*background-color: #333333;*/
+ }
+.content {
+    padding: 0 10% 0 10%;
+}
+.navbar {
+     position: fixed; 
+    width: 100%;
+    height: 60px;
+     background-color: rgba(255,255,255,0.9);
+     z-index: 1;
+    top: 0;
+ }
+ 
+ .navbar .logo,
+.footer .logo{
+     position: relative;
+     height: 40px;
+     margin: 10px 0 10px 0;
+     cursor: pointer; /*finger-pointer icon when you hover*/
+ }
+.navbar .links-container {
+     display: table;
+     position: relative;
+     top: 0;
+     float: right;
+     height: 60px;
+     color: white;
+     text-decoration: none;
+    font-size: 14px;
+}
+.links-container ul {
+    list-style: none;
+    display: table-cell;
+    vertical-align: middle;
+}
+.links-container ul > li {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.links-container ul > li > a {
+    text-decoration: none;
+    color: #12121B;
+}
+.links-container ul > li > a.btn-outline {
+    text-decoration: none;
+    color: #BD2659;
+    border: 1px solid #BD2659;
+    border-radius: 3px;
+    padding: 8px 14px;
+}
+.links-container ul > li > a.btn-outline:hover {
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #BD2659;
+    background-color: #BD2659;
+    border-radius: 3px;
+    padding: 8px 14px;
+}
+
+.links-container img {
+    height: 16px;
+}
+
+.links-container .navbar-link {
+     display: table-cell;
+     position: relative;
+     height: 100%;
+     padding-left: 1rem;
+     padding-right: 1rem;
+     vertical-align: middle; /*vertical align within table-cell display!!*/
+     color: white;
+     font-size: 0.625rem;
+     letter-spacing: 0.05rem;
+     text-decoration: none;
+     cursor: pointer;
+ }
+ 
+ .links-container ul > li > a:hover {
+     color: #BD2659;
+ }
+ .links-container ul > li > a:active {
+     color: #BD2659;
+ }
+
+ .header {
+     position: relative; 
+     height: 70vh;
+     background-image: url(../images/tiger.jpg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     -webkit-clip-path: polygon(100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
+     clip-path: polygon(100% 0, 100% 80%, 50% 90%, 0 80%, 0 0);
+ }
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    width: 100vw;
+    background-color: #12121B;
+    opacity: .35;
+}
+
+.hero { /*if i dont put this in a table, it pushes the hero bg down*/ 
+    height: 60vh;
+    width: 100vw;
+    display: table;
+    top: 40%;
+}
+h1 {
+    font-family: "PT Serif";
+    font-size: 36px;
+    font-weight: bold;
+}
+h3 {
+    color: #BD2659;
+}
+
+.pinklink span {
+    color: #BD2659;
+}
+
+.hero-content {
+    display: table-cell;
+     /*position: absolute;
+     top: 40%;
+     -webkit-transform: translateY(-50%);
+     -moz-transform: translateY(-50%);
+     -ms-transform: translateY(-50%);
+     transform: translateY(-50%);*/
+    vertical-align: middle;
+     text-align: center;
+    width: 100vw;
+ }
+.hero-content h1 {
+    /*width: 30%;*/
+    text-shadow: 1px 1px 0px rgb(58,23,63);
+    color: #ffffff;
+}
+.hero-content p {
+    /*width: 30%;*/
+    margin: 0 0 30px 0;
+    text-shadow: 1px 1px 0px rgb(58,23,63);
+    color: #ffffff;
+}
+.btn-action {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #BD2659;
+    border: 1px solid #BD2659;
+    border-radius: 3px;
+    padding: 8px 14px;
+    margin-top: 20px;
+}
+.btn-action:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #d83e72;
+    border: 1px solid #d83e72;
+    border-radius: 3px;
+    padding: 8px 14px;
+}
+.btn-action:action {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #d83e72;
+    border: 1px solid #d83e72;
+    border-radius: 3px;
+    padding: 8px 14px;
+}
+
+
+
+
+
+
+
+.selling-points {
+    position: relative;
+     /* display: table;
+        width: 100%;    we remove table bc we have put this into the grid system class colummn*/
+    text-align: center;
+    padding: 8% 0;
+ }
+ 
+ .point {
+     /*display: table-cell; (bc see above) */
+     position: relative;
+     /*width: 33.3%;*/
+     padding: 2rem;
+     text-align: center;
+ }
+ 
+ .point .point-title {
+     font-size: 1.25rem;
+ }
+ 
+.three-ways {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+
+ .upload,
+ .choose,
+ .draw p {
+     color: #9B9B9B;
+     font-size: 1rem;
+ }
+
+ *, *::before, *::after {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+ }
+
+ .container { /*so content in container isn't warped the larger the browser window*/
+     margin: 0 10%;
+     max-width: 100%;
+ }
+
+.clearfix::before,
+.clearfix::after {
+   content: " ";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
+}
+
+.container.narrow {
+     max-width: 56rem;
+}
+
+.howitworks{
+    max-width: 80%;
+    margin: 0;
+}
+.join {
+    max-width: 100%;
+    margin: 0;
+}
+
+/*.insta1 { img in html
+    max-width: 100%;
+    max-height: 235px;
+    margin: 0 20px 20px 0;
+}*/
+.insta2 {
+    max-width: 100%;
+    background-size: cover;
+    margin: 0;
+}
+
+.designonline {
+    margin: 0 0 -5% 0;
+}
+.track {
+    background-image: url(../images/track-bg.png);
+    height: 90vh;
+        background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+}
+
+
+.need-inspiration {
+background-image: url(../images/clouds.png);
+    background-repeat: no-repeat;
+    /* padding: 10%; */
+    background-size: 100%;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
+    background-position-y: 100%;
+ }
+
+.footer {
+    background-image: url(../images/clouds-footer.png);
+    height: 45vh;
+    background-repeat: no-repeat;
+    /*background-position: center center;*/
+     background-size: cover;
+    bottom: 0;
+}
+.footer ul {
+    list-style: none;
+}
+.footer ul li {
+    line-height: 45px;
+}
+.footer ul > li > a {
+    text-decoration: none;
+}
+ /* Medium and small screens (640px) */
+@media (min-width: 640px) {
+    html { 
+        font-size: 90%; 
+    }
+    .column { /*grid*/
+        float: left;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .column.full { 
+        width: 100%; 
+    }
+    .column.two-thirds { 
+        width: 66.7%; 
+    }
+    .column.half { 
+        width: 50%; 
+    }
+    .column.half.left {
+    text-align: right;
+    padding: 8%;
+}
+    .column.half.right {
+    text-align: left;
+    padding: 8%;
+}
+.column.half.left p,
+.column.half.right p,
+.column.half.right a{
+    margin: 30px 0px 30px 0px;
+}
+    .column.third { 
+        width: 33.3%;
+        padding: 5%;
+    }
+    .column.fourth { 
+        width: 25%; 
+    }
+     .column.fifth { 
+        text-align: left; 
+    }
+    .column.flow-opposite { 
+        float: right; 
+    } 
+    .insta2 {
+    max-width: 100%;
+    background-size: cover;
+    margin: 0 0 25px 0;
+}
+ }
+
+ 
+ /* Large screens (1024px) */
+@media (min-width: 1024px) {
+    html { font-size: 100%; }
+ }
