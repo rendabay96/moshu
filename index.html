@@ -5,6 +5,7 @@
 	<title>Moshu - Design Your Own Plushie</title>
 	<meta name="description" content="">
   	<meta name="author" content="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -62,12 +63,19 @@
         <div class="hero content">
             <!--<div class="hero-overlay">-->
                 <div class="hero-content">
-                <h1>Bring your imagination to life</h1>
+                <h1>Bring your imagination <br>to life</h1>
                 <p>Moshu Plushies designed by you.<br>Turn dreams into huggable reality!</p>
                 <p><a href="#" class="btn-action">Get Started</a></p>
                 </div>
             </div>
+   
+    
+    <section class="numbersold">
+    <h2><div id="scrolling"><span class="count">5</span>,<span class="count">2</span><span class="count">8</span><span class="count">3</span></div>Moshu Plushies sold so far!</h2>
+    <!--<div class="bounce"><img class="downward" src="images/arrow.png"></div>-->
+
     </section>
+         </section>
     
     <section class="selling-points container clearfix"> <!-- selling points -->
         <h3>How it works</h3>
@@ -92,44 +100,45 @@
             </div>
         </section>
 
-    <section class="selling-points container clearfix"> <!-- selling points -->
+    <!--<section class="selling-points container clearfix"> 
         <img class="howitworks" src="images/howitworks.png">
     </section>
+    -->
 
     <section class="selling-points need-inspiration container clearfix"> <!-- selling points -->
         <h3>Design online</h3>
         <h1>Need inspiration?</h1>
-        <p>Begin drawing now or try some of our free templates at the Design Studio!</p>
+        <p>Begin drawing now or try some of our free templates at the <a class="pinklink" href="">Design Studio</a></p>
         <img class="howitworks designonline" src="images/cropped-ipad.png">
     </section>
 
     <section class="selling-points personalize container clearfix"> <!-- selling points -->
         <div class="point column half left">
-            <img class="howitworks designonline" src="images/add-stickers.png">
+            <img class="howitworks designonline" src="images/sloth-stickers.gif">
         </div>
         <div class="point column half right">
             <h3>Personalize</h3>
             <h1>Make it your own</h1>
-            <p>Begin drawing now or try some of our free templates at the Design Studio!</p>
+            <p>Add some character with a variety of colors, textures, and stickers!</p>
             <p><a href="#" class="btn-action">Get Started</a></p>
         </div>
     </section>
     
-    <div class="track">
-    <section class="selling-points container clearfix"> <!-- selling points -->
+
+    <section class="selling-points container clearfix track"> <!-- selling points -->
         <div class="point column half left">
             <h3>Stay updated</h3>
             <h1>Track your plushies</h1>
-            <p>Create your account and visit anytime to check in on your toy’s progress. We send updates to include you every step of the creation process!</p>
+            <p><a class="pinklink" href="">Create your account</a> and visit anytime to check in on your toy’s progress. We send updates to include you every step of the creation process!</p>
         </div>
     </section>
-    </div>
-    <section class="selling-points container clearfix"> <!-- selling points -->
+
+    <section class="selling-points container clearfix joinus"> <!-- selling points -->
         <h1>Join our story</h1>
-        <p>Check out these #moshu masterpieces on our <br>Instagram feed. Remember to share yours, too!</p>
+        <p>Check out these <a class="pinklink" href="">#moshu</a> masterpieces on our <br>Instagram feed. Remember to share yours, too!</p>
         
         <div class="point column half">
-        <img class="join designonline" src="images/join-sloth.png">
+        <img class="join designonline" src="images/join-tiger.png">
         </div>
         
         <div class="point column fourth insta2">
@@ -147,7 +156,6 @@
     
     </section>
     <div class="footer">
-    <section class="container clearfix">
         <div class="point column fifth">
         <ul>
             <li><a href="index.html"><img class="logo" src="images/moshu-nav-logo.png"></a></li>
@@ -183,8 +191,26 @@
         </ul>
         </div>
                         
-    
-    </section>
     </div>
+<script>
+    $(document).ready(function() { 
+    $('.count').each(function() {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 1000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
+    
+    
+        });
+    
+    </script>
+    
+
 </body>
 </html>
